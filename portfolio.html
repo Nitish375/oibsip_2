@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="NITlogo.png" class="logo" width="120px">
+                <ul>
+                    <li><a href="Home" target="blank">Home </a> </li>
+                    <li><a href="About" target="blank">About</a></li>
+                    <li><a href="Services" target="blank">Services</a></li>
+                    <li><a href="NITISH KUMAR RESUME.pdf" target="blank">Resume</a></li>
+                    <li><a href="Contact" target="blank">Contact</a></li>
+                </ul>
+            </nav>
+            
+            <div class="header-text">
+                <p>Web Developer</p>
+                <h1>hi, I'm <span> Nitish</span> <br> Nittin from India</h1>
+            </div>
+           
+        </div>
+    </div>
+    <!-- ----------about-------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="nitish pic.jpeg" >
+                </div>
+                <div class="about-col-2">
+                     <h1 class="sub-title">About Me</h1>
+                     <p>Myself Nitish kumar.I am persuing B.Tech (2021-25) from Bhagalpur College Of Engineering.</p>
+                     <br>
+                     <br>
+                     <ul>
+                        <li>Age:- 18 years</li>
+                        <li>contact no:- 6003161874</li>
+                        <li>Email:- nitish375kumar@gmail.com</li>
+                     </ul>
+
+                     <div class="tab-titles">
+                        <p class="tab-links  active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                     </div>
+                     <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>designing Web/App interfaces</li>
+                            <li><span>Web Development</span><br>Web App Development</li>
+                            <li><span>App Development</span><br>Building Android/iOS apps </li>
+                        </ul>
+                    </div>
+                     <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2022 - current</span><br>B.Tech from BCE Bhagalpur</li>
+                            <li><span>2021</span><br>I.Sc from AND College Samastipur</li>
+                            <li><span>2019</span><br>Matric from High School Samastipur </li>
+                        </ul>
+                     </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script>
+         var tablink = document.getElementsByClassName("tab-links");
+         var tabcontent = document.getElementsByClassName("tab-contents");
+         function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontenets){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.claasList.add("active-link");
+            document.getElementById(tabnme).classList.add("active-tab");
+         }
+    </script>
+</body>
+</html>
